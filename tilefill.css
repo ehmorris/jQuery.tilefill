@@ -12,7 +12,7 @@
   width: 100%; }
   .tilefill .tile {
     background: #eee;
-    border: 1px solid #333;
+    border: 1px solid #ccc;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     -ms-box-sizing: border-box;
