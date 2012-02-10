@@ -1,3 +1,32 @@
+.animation-slide-in, .tilefill .tile {
+  -webkit-animation: slide-in 0.25s cubic-bezier(0.39, 0.575, 0.565, 1);
+  -moz-animation: slide-in 0.25s cubic-bezier(0.39, 0.575, 0.565, 1);
+  animation: slide-in 0.25s cubic-bezier(0.39, 0.575, 0.565, 1);
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  animation-fill-mode: both; }
+
+@-webkit-keyframes slide-in {
+  0% {
+    opacity: 0; }
+
+  100% {
+    opacity: 1; } }
+
+@-moz-keyframes slide-in {
+  0% {
+    opacity: 0; }
+
+  100% {
+    opacity: 1; } }
+
+@keyframes slide-in {
+  0% {
+    opacity: 0; }
+
+  100% {
+    opacity: 1; } }
+
 .tilefill {
   bottom: 0;
   -webkit-box-sizing: border-box;
@@ -9,6 +38,26 @@
   overflow: hidden;
   position: absolute;
   top: 0;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -ms-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.15s;
+  -moz-transition-duration: 0.15s;
+  -ms-transition-duration: 0.15s;
+  -o-transition-duration: 0.15s;
+  transition-duration: 0.15s;
+  -webkit-transition-timing-function: ease-out;
+  -moz-transition-timing-function: ease-out;
+  -ms-transition-timing-function: ease-out;
+  -o-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+  -webkit-transition-delay: 0;
+  -moz-transition-delay: 0;
+  -ms-transition-delay: 0;
+  -o-transition-delay: 0;
+  transition-delay: 0;
   width: 100%; }
   .tilefill .tile {
     background: #eee;
@@ -20,3 +69,63 @@
     box-sizing: border-box;
     display: block;
     float: left; }
+    .tilefill .tile:nth-child(1) {
+      -webkit-animation-delay: 0.05s;
+      -moz-animation-delay: 0.05s;
+      animation-delay: 0.05s; }
+    .tilefill .tile:nth-child(2) {
+      -webkit-animation-delay: 0.1s;
+      -moz-animation-delay: 0.1s;
+      animation-delay: 0.1s; }
+    .tilefill .tile:nth-child(3) {
+      -webkit-animation-delay: 0.15s;
+      -moz-animation-delay: 0.15s;
+      animation-delay: 0.15s; }
+    .tilefill .tile:nth-child(4) {
+      -webkit-animation-delay: 0.2s;
+      -moz-animation-delay: 0.2s;
+      animation-delay: 0.2s; }
+    .tilefill .tile:nth-child(5) {
+      -webkit-animation-delay: 0.25s;
+      -moz-animation-delay: 0.25s;
+      animation-delay: 0.25s; }
+    .tilefill .tile:nth-child(6) {
+      -webkit-animation-delay: 0.3s;
+      -moz-animation-delay: 0.3s;
+      animation-delay: 0.3s; }
+    .tilefill .tile:nth-child(7) {
+      -webkit-animation-delay: 0.35s;
+      -moz-animation-delay: 0.35s;
+      animation-delay: 0.35s; }
+    .tilefill .tile:nth-child(8) {
+      -webkit-animation-delay: 0.4s;
+      -moz-animation-delay: 0.4s;
+      animation-delay: 0.4s; }
+    .tilefill .tile:nth-child(9) {
+      -webkit-animation-delay: 0.45s;
+      -moz-animation-delay: 0.45s;
+      animation-delay: 0.45s; }
+    .tilefill .tile:nth-child(10) {
+      -webkit-animation-delay: 0.5s;
+      -moz-animation-delay: 0.5s;
+      animation-delay: 0.5s; }
+    .tilefill .tile:nth-child(11) {
+      -webkit-animation-delay: 0.55s;
+      -moz-animation-delay: 0.55s;
+      animation-delay: 0.55s; }
+    .tilefill .tile:nth-child(12) {
+      -webkit-animation-delay: 0.6s;
+      -moz-animation-delay: 0.6s;
+      animation-delay: 0.6s; }
+    .tilefill .tile:nth-child(13) {
+      -webkit-animation-delay: 0.65s;
+      -moz-animation-delay: 0.65s;
+      animation-delay: 0.65s; }
+    .tilefill .tile:nth-child(14) {
+      -webkit-animation-delay: 0.7s;
+      -moz-animation-delay: 0.7s;
+      animation-delay: 0.7s; }
+    .tilefill .tile:nth-child(15) {
+      -webkit-animation-delay: 0.75s;
+      -moz-animation-delay: 0.75s;
+      animation-delay: 0.75s; }

@@ -1,5 +1,21 @@
 @import 'bourbon/bourbon';
 
+.animation-slide-in {
+  @include animation(slide-in 0.25s $ease-out-sine);
+  @include animation-fill-mode(both);
+}
+
+@mixin slide-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes slide-in { @include slide-in; }
+   @-moz-keyframes slide-in { @include slide-in; }
+        @keyframes slide-in { @include slide-in; }
 
 .tilefill {
   bottom: 0;
@@ -8,6 +24,7 @@
   overflow: hidden;
   position: absolute;
   top: 0;
+  @include transition;
   width: 100%;
 
   .tile {
@@ -16,5 +33,16 @@
     @include box-sizing(border-box);
     display: block;
     float: left;
+
+    @extend .animation-slide-in;
+
+    $t: 0.05s;
+    $delay: $t;
+    @for $child from 1 through 15 {
+      &:nth-child(#{$child}) {
+        @include animation-delay($delay);
+      }
+      $delay: $delay + $t;
+    }
   }
 }
