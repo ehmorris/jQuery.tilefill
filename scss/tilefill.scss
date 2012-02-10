@@ -1,0 +1,25 @@
+@import 'bourbon/bourbon';
+
+
+.tilefill {
+  bottom: 0;
+  @include box-sizing(border-box);
+  height: auto;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  width: 100%;
+
+  .tile {
+    background: #eee;
+    border: 1px solid #333;
+    @include box-sizing(border-box);
+    display: block;
+    float: left;
+    position: relative;
+
+    .title {
+      text-align: center;
+    }
+  }
+}
