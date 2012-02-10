@@ -10,6 +10,16 @@
         margin: 0;
       }
 
+      .select_boxes {
+        background: rgba(0,0,0,.4);
+        left: 0;
+        padding: 1em;
+        position: absolute;
+        right: 0;
+        text-align: center;
+        z-index: 1;
+      }
+
       .tilefill .highlight {
         background: #fff;
         font-weight: bold;
@@ -36,10 +46,41 @@
         $(window).resize(function() {
           $('.tilefill').tilefill();
         });
+
+        $('select').change(function() {
+          var box_number = $('select').val();
+          var html_string = '';
+          var i = 0;
+          for (i = 0; i < box_number; i++) {
+            html_string += '<div class="tile"></div>'
+          }
+          $('.tilefill').html(html_string);
+          $('.tilefill').tilefill();
+        });
       });
     </script>
   </head>
   <body>
+    <div class="select_boxes">
+      <label>number of boxes</label>
+      <select>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+        <option>6</option>
+        <option>7</option>
+        <option>8</option>
+        <option>9</option>
+        <option>10</option>
+        <option selected="selected">11</option>
+        <option>12</option>
+        <option>13</option>
+        <option>14</option>
+        <option>15</option>
+      </select>
+    </div>
     <section class="tilefill">
       <div class="tile"></div>
       <div class="tile"></div>
