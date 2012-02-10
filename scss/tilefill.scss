@@ -16,10 +16,5 @@
     @include box-sizing(border-box);
     display: block;
     float: left;
-    position: relative;
-
-    .title {
-      text-align: center;
-    }
   }
 }
